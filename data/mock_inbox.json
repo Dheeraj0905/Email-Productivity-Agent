@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "sender": "sarah.johnson@techcorp.com",
+    "subject": "Q4 Project Deadline - Action Required",
+    "body": "Hi Team,\n\nWe need to finalize the Q4 deliverables by Nov 30th. Please confirm your availability for a sync meeting this Thursday at 2 PM to discuss the remaining tasks.\n\nKey items to cover:\n- Final review of documentation\n- Testing status update\n- Deployment timeline\n\nPlease respond by EOD tomorrow.\n\nBest regards,\nSarah",
+    "timestamp": "2025-11-23T14:30:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 2,
+    "sender": "newsletter@techdigest.com",
+    "subject": "Weekly Tech News - AI Trends 2025",
+    "body": "This week in tech:\n\n• GPT-5 rumors intensify as OpenAI hints at breakthrough capabilities\n• Quantum computing reaches new milestone with 1000+ qubit processor\n• Apple announces Vision Pro 2 with enhanced AR features\n• Tesla reveals autonomous taxi service pilot program\n\nRead more at techdigest.com\n\nUnsubscribe | Manage Preferences",
+    "timestamp": "2025-11-24T08:00:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 3,
+    "sender": "support@cloudservices.io",
+    "subject": "URGENT: Security Patch Required",
+    "body": "Dear Administrator,\n\nA critical security vulnerability has been identified in your cloud infrastructure. Please apply the security patch immediately to prevent potential data breaches.\n\nAction Required:\n1. Download patch from admin portal\n2. Schedule maintenance window\n3. Apply patch to all instances\n4. Verify system integrity\n\nFailure to act within 48 hours may result in service suspension.\n\nTechnical Support Team\nCloudServices.io",
+    "timestamp": "2025-11-24T16:45:00Z",
+    "has_attachment": true
+  },
+  {
+    "id": 4,
+    "sender": "no-reply@lottery-winner.xyz",
+    "subject": "Congratulations! You've Won $5,000,000!",
+    "body": "DEAR LUCKY WINNER,\n\nYou have been randomly selected to receive FIVE MILLION DOLLARS from our international lottery program! To claim your prize, simply click the link below and provide your banking information.\n\nCLAIM NOW: http://suspicious-link.xyz/claim\n\nThis offer expires in 24 hours!\n\nInternational Lottery Commission",
+    "timestamp": "2025-11-23T03:22:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 5,
+    "sender": "michael.chen@designstudio.com",
+    "subject": "Design Review Meeting - Agenda Needed",
+    "body": "Hi,\n\nI see we have a design review scheduled for this Friday at 10 AM. Could you please send over the agenda and any materials we should review beforehand?\n\nAlso, will the client be joining, or is this an internal review?\n\nThanks,\nMichael",
+    "timestamp": "2025-11-24T11:20:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 6,
+    "sender": "hr@company.com",
+    "subject": "Annual Performance Review Scheduled",
+    "body": "Hello,\n\nYour annual performance review has been scheduled for December 5th at 3:00 PM with your manager.\n\nPlease complete the self-assessment form in the HR portal by December 1st. The form should take approximately 30-45 minutes to complete.\n\nReminder: This is a required activity for all employees.\n\nBest regards,\nHuman Resources",
+    "timestamp": "2025-11-22T09:15:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 7,
+    "sender": "deals@onlineshopping.com",
+    "subject": "🎉 Black Friday Early Access - 70% OFF Everything!",
+    "body": "BLACK FRIDAY IS HERE! 🛍️\n\nGet early access to our biggest sale of the year!\n\n70% OFF SITEWIDE\n+ Extra 15% with code: EARLY2025\n+ FREE Shipping on orders over $50\n\nDon't miss out! Sale ends midnight Sunday.\n\nSHOP NOW → onlineshopping.com/blackfriday\n\nFollow us: Instagram | TikTok | Twitter",
+    "timestamp": "2025-11-24T06:00:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 8,
+    "sender": "jane.williams@clientcorp.com",
+    "subject": "Project Proposal Feedback",
+    "body": "Hi there,\n\nThank you for the detailed project proposal. Overall, it looks great! I have a few questions and suggestions:\n\n1. Can we extend the timeline by 2 weeks to accommodate more thorough testing?\n2. The budget section needs clarification on the infrastructure costs\n3. We'd like to add a dedicated QA resource to the team\n\nCould we schedule a call next week to discuss these points? I'm available Tuesday afternoon or Wednesday morning.\n\nLooking forward to working together!\n\nBest,\nJane Williams\nProject Manager, ClientCorp",
+    "timestamp": "2025-11-23T15:40:00Z",
+    "has_attachment": true
+  },
+  {
+    "id": 9,
+    "sender": "notifications@github.com",
+    "subject": "[Repository] New Pull Request: Feature/user-authentication",
+    "body": "New pull request in your repository:\n\nTitle: Feature/user-authentication\nAuthor: @dev-alex\nBranch: feature/user-auth → main\n\nDescription:\nImplements JWT-based user authentication system with the following:\n- Login/logout endpoints\n- Token refresh mechanism\n- Password hashing with bcrypt\n- User session management\n\n+847 lines, -23 lines across 12 files\n\nView Pull Request: github.com/yourorg/project/pull/142\n\nReview required before merging.",
+    "timestamp": "2025-11-24T13:05:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 10,
+    "sender": "admin@conference2025.org",
+    "subject": "Speaker Confirmation Required - TechSummit 2025",
+    "body": "Dear Speaker,\n\nWe're excited to have you present at TechSummit 2025!\n\nPlease confirm the following details by November 28th:\n\n✓ Session Title: \"Building Scalable AI Applications\"\n✓ Date: March 15, 2026\n✓ Time Slot: 2:00 PM - 3:30 PM\n✓ Format: 60-min presentation + 30-min Q&A\n\nWe also need:\n- Your latest bio (150 words max)\n- High-resolution headshot\n- Any A/V requirements\n- Dietary restrictions for speaker dinner\n\nPlease reply to this email with your confirmation.\n\nThank you!\nConference Organizing Committee",
+    "timestamp": "2025-11-21T10:30:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 11,
+    "sender": "billing@webhosting.net",
+    "subject": "Invoice #2025-1147 - Payment Due",
+    "body": "Invoice Details:\n\nAccount: premium-hosting-plan\nBilling Period: November 2025\nAmount Due: $149.99\nDue Date: November 30, 2025\n\nServices:\n- Web Hosting (Premium): $99.99\n- SSL Certificate: $29.99\n- Daily Backups: $20.00\n\nPayment Methods: Credit Card, PayPal, Bank Transfer\n\nView Invoice: webhosting.net/invoice/2025-1147\n\nThank you for your business!",
+    "timestamp": "2025-11-24T07:15:00Z",
+    "has_attachment": true
+  },
+  {
+    "id": 12,
+    "sender": "lisa.anderson@marketing.com",
+    "subject": "Blog Post Draft - Please Review",
+    "body": "Hey!\n\nI've finished the draft for next week's blog post on \"10 Productivity Hacks for Remote Teams\". Could you review it and provide feedback by Thursday?\n\nI've attached the Google Doc link. Main points I'd like feedback on:\n- Is the tone appropriate for our audience?\n- Are the examples relatable?\n- Should we add more visual elements?\n\nDoc Link: docs.google.com/document/d/xyz123\n\nThanks so much!\nLisa",
+    "timestamp": "2025-11-24T14:50:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 13,
+    "sender": "security@bankingsystem.com",
+    "subject": "Suspicious Activity Alert - Account Verification",
+    "body": "⚠️ SECURITY ALERT ⚠️\n\nWe detected unusual activity on your account:\n\nLocation: Unknown Location (IP: 185.xxx.xxx.xxx)\nActivity: Login attempt from unrecognized device\nTime: Nov 24, 2025 at 11:42 PM\n\nIf this was you, no action is needed.\n\nIf this was NOT you, please:\n1. Change your password immediately\n2. Enable two-factor authentication\n3. Review recent transactions\n\nSecure Your Account → bankingsystem.com/security\n\nDo not reply to this email. Contact support at 1-800-XXX-XXXX.\n\nBanking Security Team",
+    "timestamp": "2025-11-24T23:45:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 14,
+    "sender": "noreply@socialmedia.com",
+    "subject": "Your Weekly Activity Summary",
+    "body": "Hi there! 👋\n\nHere's your activity summary for this week:\n\n📊 Profile Views: 234 (+12%)\n👥 New Followers: 47\n❤️ Total Likes: 1,203\n💬 Comments: 89\n🔄 Shares: 34\n\nYour top post:\n\"5 Tips for Better Work-Life Balance\" - 456 engagements\n\nKeep up the great content!\n\nView Full Analytics → socialmedia.com/analytics\n\nThe Social Media Team",
+    "timestamp": "2025-11-24T10:00:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 15,
+    "sender": "david.martinez@vendor.com",
+    "subject": "Partnership Opportunity - Let's Discuss",
+    "body": "Hello,\n\nI hope this email finds you well. I'm reaching out from VendorCorp regarding a potential partnership opportunity that could benefit both our organizations.\n\nWe specialize in enterprise software solutions and have successfully partnered with companies similar to yours. I believe there's strong synergy between our offerings.\n\nWould you be interested in a brief 30-minute call to explore this further? I'm flexible with timing and happy to work around your schedule.\n\nI've attached our partnership overview deck for your reference.\n\nLooking forward to hearing from you.\n\nBest regards,\nDavid Martinez\nPartnership Director, VendorCorp",
+    "timestamp": "2025-11-22T13:20:00Z",
+    "has_attachment": true
+  },
+  {
+    "id": 16,
+    "sender": "it-support@company.com",
+    "subject": "System Maintenance - This Weekend",
+    "body": "IT MAINTENANCE NOTIFICATION\n\nScheduled Maintenance Window:\nDate: Saturday, November 27, 2025\nTime: 11:00 PM - 5:00 AM Sunday\nDuration: Approximately 6 hours\n\nAffected Systems:\n- Email servers\n- File sharing platform\n- VPN access\n- Internal databases\n\nAction Required:\n- Save all work before 11 PM Saturday\n- Plan accordingly if you work weekends\n- No action needed; systems will be back automatically\n\nExpected Improvements:\n- Faster performance\n- Enhanced security\n- Bug fixes\n\nQuestions? Contact IT Support at extension 5555.\n\nIT Department",
+    "timestamp": "2025-11-24T12:00:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 17,
+    "sender": "events@industry-association.org",
+    "subject": "Invitation: Annual Networking Gala 2025",
+    "body": "You're Invited! 🎊\n\nAnnual Industry Networking Gala\nDate: December 15, 2025\nTime: 6:00 PM - 10:00 PM\nVenue: Grand Hotel Ballroom\nDress Code: Business Formal\n\nJoin 300+ industry leaders for an evening of networking, recognition, and celebration. This year's event features:\n\n- Keynote by renowned entrepreneur Sarah Chen\n- Industry Awards Ceremony\n- Networking reception with open bar\n- Gourmet dinner\n- Live entertainment\n\nTickets: $175 per person | $1,500 for table of 10\n\nRSVP by December 1st: industry-association.org/gala2025\n\nWe hope to see you there!",
+    "timestamp": "2025-11-20T15:00:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 18,
+    "sender": "recruiter@talentfinders.com",
+    "subject": "Exciting Opportunity - Senior Software Engineer",
+    "body": "Hi,\n\nI came across your profile and wanted to reach out about an exciting opportunity with one of our premier clients.\n\nPosition: Senior Software Engineer\nLocation: Remote (US-based)\nSalary Range: $150k - $200k + equity\nTech Stack: Python, React, AWS, Kubernetes\n\nThe company is a fast-growing fintech startup with Series B funding. They're looking for someone with your background in distributed systems.\n\nAre you open to exploring new opportunities? I'd love to share more details.\n\nBest,\nEmily Rogers\nTechnical Recruiter\nTalentFinders Inc.\nemogers@talentfinders.com",
+    "timestamp": "2025-11-23T09:30:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 19,
+    "sender": "professor.smith@university.edu",
+    "subject": "Guest Lecture Request - Spring 2026",
+    "body": "Dear Colleague,\n\nI hope this message finds you well. I'm reaching out to invite you to deliver a guest lecture in my \"Modern Software Engineering\" course next spring.\n\nCourse: CS 450 - Modern Software Engineering\nProposed Date: February or March 2026 (flexible)\nTopic: AI in Production Systems (based on your expertise)\nDuration: 90 minutes (lecture + Q&A)\nAudience: 40-50 senior undergraduate students\n\nWe can offer an honorarium of $500 plus travel expenses if needed.\n\nThe students would greatly benefit from your real-world experience. Would you be interested?\n\nPlease let me know your availability.\n\nBest regards,\nProf. James Smith\nComputer Science Department\nUniversity of Technology",
+    "timestamp": "2025-11-21T16:45:00Z",
+    "has_attachment": false
+  },
+  {
+    "id": 20,
+    "sender": "team@productivity-app.io",
+    "subject": "Your Free Trial Expires in 3 Days",
+    "body": "Hi there! 👋\n\nYour free trial of ProductivityApp Pro expires in 3 days.\n\nWhat you've accomplished:\n✅ 47 tasks completed\n✅ 12 projects managed\n✅ 8 team members collaborated\n✅ 156 hours tracked\n\nDon't lose access to:\n• Unlimited projects\n• Advanced analytics\n• Priority support\n• Team collaboration tools\n• Integrations (Slack, Google, etc.)\n\nUpgrade now and get 20% off your first year!\n\nPricing:\n- Individual: $12/month → $9.60/month\n- Team (5 users): $49/month → $39/month\n\nUpgrade Now → productivity-app.io/upgrade\n\nQuestions? Reply to this email or chat with us.\n\nThe ProductivityApp Team",
+    "timestamp": "2025-11-24T09:00:00Z",
+    "has_attachment": false
+  }
+]

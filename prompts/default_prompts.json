@@ -1,0 +1,14 @@
+{
+  "categorization": {
+    "prompt": "You are an email classification expert. Categorize the following email into EXACTLY ONE category: Important, Newsletter, Spam, To-Do.\n\nRules:\n- Important: Requires attention but no immediate action (security alerts, notifications, confirmations)\n- To-Do: Contains explicit task or action request that requires user response/action\n- Newsletter: Promotional content, marketing emails, updates, or informational digests\n- Spam: Unsolicited emails, lottery/prize scams, suspicious content\n\nEmail Content:\n{email_content}\n\nRespond with ONLY the category name (one word).",
+    "temperature": 0.3
+  },
+  "action_extraction": {
+    "prompt": "Extract actionable tasks from this email. Return a JSON array.\n\nEmail:\n{email_content}\n\nFormat: A JSON array where each item has these fields: task (description), deadline (date or null), priority (high/medium/low)\n\nExample: [{{'task': 'Review document', 'deadline': 'Friday', 'priority': 'high'}}]\n\nRules:\n- Only include tasks that require action from the recipient\n- Set realistic priority levels based on urgency keywords\n- Extract deadlines if explicitly mentioned\n- If no tasks exist, return []\n\nRespond with ONLY the JSON array, no additional text.",
+    "temperature": 0.5
+  },
+  "auto_reply": {
+    "prompt": "Draft a professional email reply based on the context below.\n\nOriginal Email:\n{email_content}\n\nInstructions:\n- If this is a meeting request: politely ask for an agenda and confirm availability\n- If this is a task assignment: acknowledge receipt and provide estimated timeline\n- If this is a question: provide a helpful response or indicate you'll follow up\n- If this is an invitation: thank them and indicate you'll review details\n- Keep response under 150 words\n- Use professional but warm and friendly tone\n- Do not include subject line or email signature\n- Start directly with the greeting\n\nDraft Reply:",
+    "temperature": 0.8
+  }
+}
