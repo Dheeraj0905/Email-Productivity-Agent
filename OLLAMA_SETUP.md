@@ -1,4 +1,4 @@
-# 🦙 Ollama Setup Guide - FREE Local AI
+# Ollama Setup Guide - FREE Local AI
 
 ## What is Ollama?
 Ollama allows you to run large language models (like Llama 3.2) locally on your computer - **completely FREE**, with **no API costs**, and **no billing required**!

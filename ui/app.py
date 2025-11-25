@@ -18,7 +18,7 @@ from ui.components.draft_manager import render_draft_manager
 
 # Page configuration
 st.set_page_config(
-    page_title="InboxMaster Pro",
+    page_title="Email Productivity Agent",
     page_icon="📧",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -138,24 +138,24 @@ def main():
     # Header
     col1, col2, col3 = st.columns([3, 2, 2])
     with col1:
-        st.markdown("# 📧 InboxMaster Pro")
-        st.caption("Smart Email Management Suite")
+        st.markdown("# 📧 Email Productivity Agent")
+        st.caption("AI-Powered Email Management & Automation")
     with col2:
         st.markdown("")  # Spacer
         st.markdown("")  # Spacer
         # Show LLM provider badge
         provider = config.LLM_PROVIDER.upper()
         if provider == "OLLAMA":
-            st.success(f"**Engine:** {provider} ")
+            st.success(f"**Using:** {provider} ")
         else:
-            st.info(f"**Engine:** {provider}")
+            st.info(f"**Using:** {provider}")
     with col3:
         st.markdown("")  # Spacer
         st.markdown("")  # Spacer
         # View mode selector
         view = st.selectbox(
-            "View",
-            ["Inbox", "Drafts"],
+            "📂 View Mode",
+            ["📥 Inbox", "✉️ Drafts"],
             key="view_selector",
         )
         st.session_state.view_mode = "drafts" if "Drafts" in view else "inbox"
@@ -164,10 +164,10 @@ def main():
     
     # Modern Sidebar
     with st.sidebar:
-        st.markdown("### Settings")
+        st.markdown("### ⚙️ Settings & Controls")
         
         # Reload button at top
-        if st.button("Refresh", use_container_width=True, type="primary"):
+        if st.button("🔄 Reload Data", use_container_width=True, type="primary"):
             st.rerun()
         
         st.divider()
@@ -178,7 +178,7 @@ def main():
         st.divider()
         
         # System Stats - Modern Card Style
-        st.markdown("### Analytics")
+        st.markdown("### 📊 System Statistics")
         
         emails = load_emails()
         processed_count = sum(1 for e in emails if e.processed)
@@ -188,23 +188,23 @@ def main():
         col1, col2 = st.columns(2)
         with col1:
             st.metric("Total", len(emails))
-            st.metric("Done", processed_count)
+            st.metric("✅ Processed", processed_count)
         with col2:
-            st.metric("Pending", unprocessed_count)
+            st.metric("📥 Inbox", unprocessed_count)
             processing_rate = (processed_count / len(emails) * 100) if emails else 0
-            st.metric("Progress", f"{processing_rate:.0f}%")
+            st.metric("📈 Rate", f"{processing_rate:.0f}%")
         
         # Token usage (if available)
         from backend.unified_llm_service import unified_llm_service
         tokens = unified_llm_service.get_token_usage()
         if tokens > 0:
             st.divider()
-            st.metric("API Calls", f"{tokens:,}")
+            st.metric("AI Requests", f"{tokens:,}")
         
         # Model info
         st.divider()
-        st.caption(f"Model: {config.OPENAI_MODEL if config.LLM_PROVIDER == 'openai' else config.OLLAMA_MODEL}")
-        st.caption(f"v{config.APP_VERSION}")
+        st.caption(f"**Model:** {config.OPENAI_MODEL if config.LLM_PROVIDER == 'openai' else config.OLLAMA_MODEL}")
+        st.caption(f"**Version:** {config.APP_VERSION}")
     
     # Main content area - Modern Three-Column Layout
     if st.session_state.view_mode == "inbox":
