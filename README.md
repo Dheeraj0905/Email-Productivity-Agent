@@ -1,18 +1,18 @@
-# 📧 Email Productivity Agent - Demo
+# Email Productivity Agent - Demo
 
 An AI-powered email management system that helps you categorize emails, extract action items, and interact with your inbox through an intelligent chat interface.
 
-## 🌟 Key Features
+## Key Features
 
-- ✅ **Smart Categorization** - Automatically sorts emails (Important, To-Do, Newsletter, Spam)
-- ✅ **Action Items** - Extracts tasks with deadlines and priorities
-- ✅ **AI Chat Assistant** - Ask questions about your emails in natural language
-- ✅ **Draft Generation** - Auto-generate reply drafts with custom tone
-- ✅ **Configurable Prompts** - Customize AI behavior through the Prompt Brain
-- ✅ **Batch Processing** - Process multiple emails at once
-- ✅ **Dual AI Support** - Works with OpenAI or Ollama (local, free)
+- **Smart Categorization** - Automatically sorts emails (Important, To-Do, Newsletter, Spam)
+- **Action Items** - Extracts tasks with deadlines and priorities
+- **AI Chat Assistant** - Ask questions about your emails in natural language
+- **Draft Generation** - Auto-generate reply drafts with custom tone
+- **Configurable Prompts** - Customize AI behavior through the Prompt Brain
+- **Batch Processing** - Process multiple emails at once
+- **Dual AI Support** - Works with OpenAI or Ollama (local, free)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.11+
