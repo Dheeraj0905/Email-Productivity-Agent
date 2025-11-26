@@ -143,7 +143,6 @@ Email-Productivity-Agent/
 │   └── default_prompts.json
 │
 ├── .env                    # Your config (not in git)
-├── .env.example            # Config template
 ├── requirements.txt        # Dependencies
 └── README.md              # This file
 ```
@@ -200,12 +199,6 @@ Email-Productivity-Agent/
 - ✅ `.env` is in `.gitignore`
 - ✅ Drafts are NEVER sent automatically
 - ⚠️ **Never share your `.env` file**
-
-## 📞 Support
-
-- Check `OLLAMA_SETUP.md` for local AI setup
-- Review inline code comments
-- See `.env.example` for configuration
 
 ## 🎯 Tech Stack
 
