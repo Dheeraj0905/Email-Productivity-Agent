@@ -25,38 +25,38 @@ def render_agent_chat(selected_email_id: Optional[int] = None):
         from backend.database import db
         email = db.get_email(selected_email_id)
         if email:
-            st.success(f"💌 **Context:** {email.subject[:50]}...", icon="🎯")
+            st.success(f"**Context:** {email.subject[:50]}...")
     else:
-        st.info("💬 **General Mode** - Ask about your inbox", icon="📬")
+        st.info("**General Mode** - Ask about your inbox")
     
     # Quick action buttons with better organization
-    with st.expander("⚡ Quick Actions", expanded=True):
+    with st.expander("Quick Actions", expanded=True):
         st.caption("Click a button to start a conversation")
         
         col1, col2 = st.columns(2)
         
         with col1:
-            if st.button("📝 Summarize", key="chat_summarize", use_container_width=True, disabled=not selected_email_id):
+            if st.button("Summarize", key="chat_summarize", use_container_width=True, disabled=not selected_email_id):
                 query = "Summarize this email"
                 st.session_state.pending_query = query
             
-            if st.button("✉️ Draft Reply", key="chat_draft", use_container_width=True, disabled=not selected_email_id):
+            if st.button("Draft Reply", key="chat_draft", use_container_width=True, disabled=not selected_email_id):
                 query = "Draft a reply to this email"
                 st.session_state.pending_query = query
         
         with col2:
-            if st.button("📋 Extract Tasks", key="chat_extract", use_container_width=True, disabled=not selected_email_id):
+            if st.button("Extract Tasks", key="chat_extract", use_container_width=True, disabled=not selected_email_id):
                 query = "Extract action items from this email"
                 st.session_state.pending_query = query
             
-            if st.button("🚨 Show Urgent", key="chat_urgent", use_container_width=True):
+            if st.button("Show Urgent", key="chat_urgent", use_container_width=True):
                 query = "Show me urgent emails"
                 st.session_state.pending_query = query
     
     st.divider()
     
     # Chat history display with modern styling
-    st.markdown("#### 💭 Conversation")
+    st.markdown("#### Conversation")
     chat_container = st.container(height=350)
     
     with chat_container:
@@ -67,14 +67,14 @@ def render_agent_chat(selected_email_id: Optional[int] = None):
                     padding: 3rem 1rem;
                     color: #6b7280;
                 '>
-                    <h3>👋 Hello!</h3>
+                    <h3>Hello!</h3>
                     <p>I'm your AI email assistant. I can help you:</p>
                     <ul style='text-align: left; display: inline-block;'>
-                        <li>📝 Summarize emails</li>
-                        <li>✉️ Draft replies</li>
-                        <li>📋 Extract action items</li>
-                        <li>🔍 Search your inbox</li>
-                        <li>📊 Analyze email patterns</li>
+                        <li>Summarize emails</li>
+                        <li>Draft replies</li>
+                        <li>Extract action items</li>
+                        <li>Search your inbox</li>
+                        <li>Analyze email patterns</li>
                     </ul>
                     <p><strong>Ask me anything!</strong></p>
                 </div>
@@ -162,7 +162,7 @@ def render_agent_chat(selected_email_id: Optional[int] = None):
                 for msg in st.session_state.chat_history
             ])
             st.download_button(
-                "📥 Export",
+                "Export",
                 chat_text,
                 file_name=f"chat_history_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt",
                 mime="text/plain",
@@ -170,4 +170,4 @@ def render_agent_chat(selected_email_id: Optional[int] = None):
                 use_container_width=True
             )
         else:
-            st.button("📥 Export", key="export_disabled", use_container_width=True, disabled=True)
+            st.button("Export", key="export_disabled", use_container_width=True, disabled=True)

@@ -44,7 +44,7 @@ def render_prompt_editor():
         
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("💾 Save", key="save_cat"):
+            if st.button("Save", key="save_cat"):
                 prompt = Prompt(
                     id=None,
                     prompt_type="categorization",
@@ -54,11 +54,11 @@ def render_prompt_editor():
                     updated_at=datetime.utcnow()
                 )
                 db.insert_prompt(prompt)
-                st.success("✓ Saved!")
+                st.success("Saved!")
                 st.rerun()
         
         with col2:
-            if st.button("🔄 Reset", key="reset_cat"):
+            if st.button("Reset", key="reset_cat"):
                 if default_cat:
                     prompt = Prompt(
                         id=None,
@@ -69,11 +69,11 @@ def render_prompt_editor():
                         updated_at=datetime.utcnow()
                     )
                     db.insert_prompt(prompt)
-                    st.success("✓ Reset to default!")
+                    st.success("Reset to default!")
                     st.rerun()
     
     # Action Item Extraction Prompt
-    with st.sidebar.expander("📋 Action Item Extraction", expanded=False):
+    with st.sidebar.expander("Action Item Extraction", expanded=False):
         st.caption("How tasks are extracted from emails (returns JSON)")
         
         current_action = current_prompts.get("action_extraction")
@@ -87,11 +87,11 @@ def render_prompt_editor():
             label_visibility="collapsed"
         )
         
-        st.info("💡 Response must be valid JSON array")
+        st.info("Response must be valid JSON array")
         
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("💾 Save", key="save_action"):
+            if st.button("Save", key="save_action"):
                 prompt = Prompt(
                     id=None,
                     prompt_type="action_extraction",
@@ -101,11 +101,11 @@ def render_prompt_editor():
                     updated_at=datetime.utcnow()
                 )
                 db.insert_prompt(prompt)
-                st.success("✓ Saved!")
+                st.success("Saved!")
                 st.rerun()
         
         with col2:
-            if st.button("🔄 Reset", key="reset_action"):
+            if st.button("Reset", key="reset_action"):
                 if default_action:
                     prompt = Prompt(
                         id=None,
@@ -116,11 +116,11 @@ def render_prompt_editor():
                         updated_at=datetime.utcnow()
                     )
                     db.insert_prompt(prompt)
-                    st.success("✓ Reset to default!")
+                    st.success("Reset to default!")
                     st.rerun()
     
     # Auto-Reply Draft Prompt
-    with st.sidebar.expander("✉️ Auto-Reply Draft", expanded=False):
+    with st.sidebar.expander("Auto-Reply Draft", expanded=False):
         st.caption("How draft replies are generated")
         
         current_reply = current_prompts.get("auto_reply")
@@ -143,7 +143,7 @@ def render_prompt_editor():
         
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("💾 Save", key="save_reply"):
+            if st.button("Save", key="save_reply"):
                 # Add tone instruction to prompt
                 final_prompt = reply_prompt
                 if tone:
@@ -158,11 +158,11 @@ def render_prompt_editor():
                     updated_at=datetime.utcnow()
                 )
                 db.insert_prompt(prompt)
-                st.success("✓ Saved!")
+                st.success("Saved!")
                 st.rerun()
         
         with col2:
-            if st.button("🔄 Reset", key="reset_reply"):
+            if st.button("Reset", key="reset_reply"):
                 if default_reply:
                     prompt = Prompt(
                         id=None,
@@ -173,17 +173,17 @@ def render_prompt_editor():
                         updated_at=datetime.utcnow()
                     )
                     db.insert_prompt(prompt)
-                    st.success("✓ Reset to default!")
+                    st.success("Reset to default!")
                     st.rerun()
     
     # Prompt Statistics
     st.sidebar.divider()
-    st.sidebar.caption("📊 **Prompt Statistics**")
+    st.sidebar.caption("**Prompt Statistics**")
     st.sidebar.caption(f"Active Prompts: {len(current_prompts)}/3")
     
     # Initialize prompts button
     if len(current_prompts) < 3:
-        if st.sidebar.button("🔧 Initialize Default Prompts", use_container_width=True):
+        if st.sidebar.button("Initialize Default Prompts", use_container_width=True):
             for prompt_type, prompt_data in default_prompts.items():
                 if prompt_type not in current_prompts:
                     prompt = Prompt(
@@ -195,5 +195,5 @@ def render_prompt_editor():
                         updated_at=datetime.utcnow()
                     )
                     db.insert_prompt(prompt)
-            st.success("✓ Default prompts initialized!")
+            st.success("Default prompts initialized!")
             st.rerun()
