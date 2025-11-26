@@ -53,8 +53,9 @@ logs/
 .coverage
 htmlcov/
 
-# Streamlit
+# Streamlit (exclude secrets but keep example)
 .streamlit/
+!.streamlit/secrets.toml.example
 
 # Temporary files
 *.tmp
