@@ -442,6 +442,6 @@ MIT License - Feel free to use this project for learning, demos, or building upo
 
 ---
 
-**Questions?** Open an issue on GitHub or contact [your email]
+**Questions?** Open an issue on GitHub or contact dheerajkosuridk05@gmail.com
 
 **Demo Ready** | **Production Quality** | **Open Source**
